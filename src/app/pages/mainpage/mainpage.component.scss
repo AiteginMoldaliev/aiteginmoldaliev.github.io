@@ -44,7 +44,7 @@ h3{
 }
 .home{
     background-color: black;
-    box-shadow: 0px 10px 40px black;
+    box-shadow: 0px 10px 50px black;
     position: relative;
     .content{
         padding-bottom: 10rem;
@@ -170,6 +170,136 @@ h3{
             &:hover{
                 background-color: white;
                 color: black;
+            }
+    }
+}
+
+.portfolio{
+    background-color: black;
+    box-shadow: 0px -10px 50px black;
+    .main-text{
+        text-align: center;
+        h1{
+            color: white;
+            font-weight: 400;
+            font-size: 35px;
+            letter-spacing: 0.3rem;
+        }
+        p{
+            text-align: center;
+            color: rgba(167, 167, 167, 0.795);
+            width: 100%;
+            padding: 1rem 0;
+            font-size: 18px;
+            font-weight: 100;
+            // background-color: #711;
+            a{
+                color: #f31;
+                text-decoration: none;
+            }
+        }
+    }
+    
+    .projects{
+        display: flex;
+        flex-grow: 4;
+        padding: 2rem 0 0 0;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .project{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+        backdrop-filter: blur(5px);
+        border: 2px solid #b8022a;
+        box-shadow: 0 0 20px #b8022a;
+        padding: 2rem 1.3rem;
+        margin: 0.8rem 1rem;
+        &:hover{
+            .hoverup{
+                display: block;
+                opacity: 1;
+                .hover-inner{
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+    .hoverup{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+        background-color: #ac0428f5;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        .hover-inner{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;     
+            flex-direction: column;   
+            padding: 2rem 1rem;
+            transform: scale(0.7);
+            transition: all 0.2s ease-in-out;
+        }
+        h3{
+            color: white;
+            border: 2px solid #711;
+            border-radius: 50px;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            margin: 1rem 0;
+        }
+        p{
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            font-weight:100;
+            font-size:16px;
+        }
+
+    }
+    .text{
+        color: white;
+        text-align: center;
+        h3{
+            text-transform: uppercase;
+            padding: 0.3rem 0;
+            margin-top: 1rem;
+            letter-spacing: 0.2rem;
+        }
+        p{
+            font-size: 15px;
+            color: rgba(139, 139, 139, 0.829);
+        }
+    }
+    .btn{
+        border: 1px solid #DA0037;
+            background-color: black;
+            border-radius:0;
+            font-size: 16px;
+            color: #DA0037;
+            padding: 1rem 2rem;
+            letter-spacing: 4px;
+            margin-top: 2rem;
+            box-shadow: 2px 2px 10px #DA0037;
+            cursor: pointer;
+            transition: all 0.1s ease-in;
+            display: block;
+            margin: 1rem auto;
+            &:hover{
+                border: 1px solid black;
+                box-shadow: 2px 2px 10px black;
+                color: black;
+                background: linear-gradient(-45deg, black, #DA0037, #950101, #3F0071);
+                background-size: 400% 400%;
+                animation: gradient 15s ease-in-out infinite;   
             }
     }
 }
