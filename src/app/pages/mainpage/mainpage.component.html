@@ -12,10 +12,25 @@
                         <a href=""><li>Experince</li></a>
                         <a href=""><li>Contact Me</li></a>
                     </ul>
+                    <span (click)="pullR()"><i style="color: white;" [class]="exit"></i></span>
                 </div>
             </div>
         </div>
     </div>
+    <span class="pull" [class]='pullOn'>
+        <span (click)="pullR()"><i style="color: white;" class="fa-solid fa-xmark"></i></span>
+        <div class="pull-nav">
+            <div class="logo">
+                <a (click)="pullR()" href="#home"><img src="assets\img\WhatsApp Image 2022-04-19 at 18.29.07.jpeg"  width="70rem" alt=""></a>
+            </div>
+            <ul>
+                <a (click)="pullR()" href="#about"><li>About</li></a>
+                <a (click)="pullR()" href="#portfolio"><li>Portfolio</li></a>
+                <a (click)="pullR()" href=""><li>Experince</li></a>
+                <a (click)="pullR()" href=""><li class="end">Contact Me</li></a>
+            </ul>
+        </div>
+    </span>
     <section class="home" id='home'>
         <div class="container">
             <div class="content">
@@ -61,37 +76,11 @@
         <div class="content-inner">
             <div class="container">
                 <div class="main-text">
-                    <h1>My portfolio</h1>
-                    <p>Here are a few design projects I've worked on recently. Want to see more? <a href="#"> Email me</a>.</p>
+                    <h1 data-aos="fadeInUp">My portfolio</h1>
+                    <p data-aos="fadeInUp">Here are a few design projects I've worked on recently. Want to see more? Scroll down.</p>
                 </div>
                 <div class="projects">
-                    <div class="project" data-aos="fade-up" data-aos-duration="800">
-                        <div class="img"><img src="http://dummyimage.com/300" alt=""></div>
-                        <div class="text">
-                            <h3>Lorem</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
-                        <span class="hoverup">
-                            <div class="hover-inner">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, fuga?</p>
-                                <h3>Visite website ></h3>
-                            </div>
-                        </span>
-                    </div>
-                    <div class="project" data-aos="fade-up" data-aos-duration="1200" >
-                        <div class="img"><img src="http://dummyimage.com/300" alt=""></div>
-                        <div class="text">
-                            <h3>Lorem</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
-                        <span class="hoverup">
-                            <div class="hover-inner">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, fuga?</p>
-                                <h3>Visite website ></h3>
-                            </div>
-                        </span>
-                    </div>
-                    <div class="project" data-aos="fade-up" data-aos-duration="1600">
+                    <div class="project" data-aos="fade-up" data-aos-duration="1000">
                         <div class="img"><img src="http://dummyimage.com/300" alt=""></div>
                         <div class="text">
                             <h3>Lorem</h3>
@@ -117,7 +106,7 @@
                             </div>
                         </span>
                     </div>
-                    <div class="project" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="project" data-aos="fade-up" data-aos-duration="1000">
                         <div class="img"><img src="http://dummyimage.com/300" alt=""></div>
                         <div class="text">
                             <h3>Lorem</h3>
@@ -130,7 +119,33 @@
                             </div>
                         </span>
                     </div>
-                    <div class="project" data-aos="fade-up" data-aos-duration="1400" >
+                    <div class="project" data-aos="fade-up" data-aos-duration="1000" >
+                        <div class="img"><img src="http://dummyimage.com/300" alt=""></div>
+                        <div class="text">
+                            <h3>Lorem</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <span class="hoverup">
+                            <div class="hover-inner">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, fuga?</p>
+                                <h3>Visite website ></h3>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="project" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="img"><img src="http://dummyimage.com/300" alt=""></div>
+                        <div class="text">
+                            <h3>Lorem</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <span class="hoverup">
+                            <div class="hover-inner">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, fuga?</p>
+                                <h3>Visite website ></h3>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="project" data-aos="fade-up" data-aos-duration="1000" >
                         <div class="img"><img src="http://dummyimage.com/300" alt=""></div>
                         <div class="text">
                             <h3>Lorem</h3>
@@ -146,6 +161,22 @@
                 </div>
                 
                 <button class="btn">See more!</button>
+            </div>
+        </div>
+    </section>
+    <section class="experince" #experince >
+        <div class="container">
+            <h1 data-aos="fadeInUp">My experince</h1>
+            <div class="content-inner" data-aos="fade-up">               
+                <div class="box">
+                    <div class="elem" *ngFor="let exp of experinces">
+                        <span class="circle"></span>
+                        <p>{{exp.name}}</p>
+                        <div class="rate">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
