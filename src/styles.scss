@@ -24,7 +24,9 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(128, 128, 128, 0.418); 
   }
- 
+  *{
+    box-sizing: border-box;
+  }
     @keyframes gradient {
         0% {
             background-position: 0% 50%;
