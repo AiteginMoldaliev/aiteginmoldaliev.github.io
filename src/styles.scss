@@ -4,7 +4,9 @@
 body{
         margin: 0;
         padding: 0;
-        
+        background:  linear-gradient(-45deg, black, #f31, #950101, #DA0037);
+        background-size: 400% 400%;
+        animation: gradient 15s ease-in-out infinite;; 
     }
     html{
       scroll-behavior:smooth;
@@ -38,3 +40,4 @@ body{
             background-position: 0% 50%;
         }
     }
+    

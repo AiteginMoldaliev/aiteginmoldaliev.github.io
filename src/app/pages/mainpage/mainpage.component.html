@@ -1,4 +1,4 @@
-<div class="body">
+
     <div class="nav-inner">
         <div class="container">
             <div class="nav-bar" >
@@ -9,8 +9,8 @@
                     <ul>
                         <a href="#about"><li>About</li></a>
                         <a href="#portfolio"><li>Portfolio</li></a>
-                        <a href=""><li>Experience</li></a>
-                        <a href=""><li>Contact Me</li></a>
+                        <a href="#experience"><li>Experience</li></a>
+                        <a href="#contact-me"><li>Contact Me</li></a>
                     </ul>
                     <span (click)="pullR()"><i style="color: white;" [class]="exit"></i></span>
                 </div>
@@ -26,8 +26,8 @@
             <ul>
                 <a (click)="pullR()" href="#about"><li>About</li></a>
                 <a (click)="pullR()" href="#portfolio"><li>Portfolio</li></a>
-                <a (click)="pullR()" href=""><li>Experience</li></a>
-                <a (click)="pullR()" href=""><li class="end">Contact Me</li></a>
+                <a (click)="pullR()" href="#experience"><li>Experience</li></a>
+                <a (click)="pullR()" href="#contact-me"><li class="end">Contact Me</li></a>
             </ul>
         </div>
     </span>
@@ -41,7 +41,7 @@
                         <p data-aos="fadeInUp" data-aos-duration="1000">Web Developer</p>
                     </div>
                     <div class="contact">
-                        <button class="btn">Contact me!</button>
+                        <a href="#contact-me"><button class="btn">Contact me!</button></a>
                     </div>
                 </div>
                 <div class="right-side">
@@ -164,7 +164,7 @@
             </div>
         </div>
     </section>
-    <section class="experience" #experience >
+    <section class="experience" id='experience' >
         <div class="container">
             <h1 data-aos="fadeInUp">My experience</h1>
             <div class="content-inner" data-aos="fade-up">               
@@ -180,4 +180,38 @@
             </div>
         </div>
     </section>
-</div>
+    <section class="contact-me" id="contact-me">
+        <div class="container">
+            <h1 data-aos="fadeInUp">Contact me</h1>
+            <div class="content-inner">   
+                <div class="left-side">
+                    <div class="contacts">
+                        <div class="circle">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <p>G.R.A Ikeja, Lagos</p>
+                    </div>
+                    <div class="contacts">
+                        <div class="circle">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <p>ayte14@mail.ru</p>
+                    </div>
+                    <div class="contacts">
+                        <div class="circle">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <p>+996(558)88-75-55</p>
+                    </div>
+                </div>
+                    <div class="right-side">
+                        <div class="form">
+                            <input type="text" placeholder="Full Name">
+                            <input type="email" placeholder="Email">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                    </div>
+                </div>
+            </div>
+            <button>Submit</button>
+        </div>
+    </section>
