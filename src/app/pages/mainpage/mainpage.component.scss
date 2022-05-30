@@ -407,8 +407,6 @@ h3{
         .elem{
             display: flex;
             width: 18rem;
-            // align-items: center;
-            // justify-content: center;
             .circle{
                 width: 0.6rem;
                 height: 0.6rem;
@@ -436,9 +434,7 @@ h3{
                     height: 100%
                 }
             }
-
         }
-
     }
 }
 .contact-me{
@@ -488,8 +484,7 @@ h3{
         width: 60%;
         .form{
             display: flex;
-            flex-direction: column;
-            
+            flex-direction: column;        
         }
         input{
             border: 2px solid rgba(170, 170, 170, 0.63);
@@ -596,10 +591,7 @@ h3{
         top: 0;
     }
   }
-
-
   @media screen and (max-width:600px){
-      
       .about{
           .left-side{
               width: 100%;
@@ -620,3 +612,20 @@ h3{
           }
         }
   }
+  @media screen and (max-width:627px){
+    .contact-me{
+        .content-inner{
+            display: flex;
+            flex-direction: column;
+            .left-side{
+                display: block;
+                margin: 0 auto;              
+            }
+            .right-side{
+                display: block;
+                margin: auto;
+                width: auto;
+            }
+        }
+    }
+}
